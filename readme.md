@@ -33,11 +33,13 @@ Nachteile:
 - teuer
 - komplex
 - fragil
+- zusätzliche Stromquellen
 
 ### LED-Lösung
 Vorteile:
 - billig
 - wenige Teile
+- läuft über USB
 - braucht keinen Rahmen, geht auch an der nackten Wand
 
 Nachteile:
