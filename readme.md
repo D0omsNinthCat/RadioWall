@@ -7,6 +7,8 @@ Pin in Landkarte -> Konvertierung der Koordinaten zu digital -> Auswahl aus näc
 
 ### The Sauce
 Als Quelle für den Radiostream kann die  [Radio Garden openApi](https://jonasrmichel.github.io/radio-garden-openapi/) verwendet werden.
+Die Challenge hier wird es sein die imput Koordinaten in so zu formattieren, dass die Api uns Internetradios in der Umgebung vorschlägt.
+Eine Liste aller Radiostationen und derer Lat/Long Werte bietet die Api unter /ara/content/places bzw. [http://radio.garden/api/ara/content/places]{http://radio.garden/api/ara/content/places}. 
 
 ### Dimensionen
 Die Karte soll an einer Wand angebracht werden können, jedoch groß genug sein um eine präzise Auswahl der Radiostationen zu ermöglichen (z.B. soll noch zwischen London & Bristol unterschieden werden können).
