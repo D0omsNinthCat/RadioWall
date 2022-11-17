@@ -11,7 +11,7 @@ Die Challenge hier wird es sein die imput Koordinaten in so zu formattieren, das
 Eine Liste aller Orte mit registrierten Radiostationen und derer Lat/Long Werte bietet die Api unter /ara/content/places bzw. [http://radio.garden/api/ara/content/places]{http://radio.garden/api/ara/content/places}. Das bestmögliche Ergebnis ist also, dass man den den dem Pin am nähesten liegenden Ort findet. Wenn man also den Marker auf Wien setzt können nur alle Wiener Radiostationen auf einmal zurückkommen. Der Parameter "LocalPopularStations" kann dann noch die Radiostationen an einem gewählten Ort nach Popularität sortieren.
 
 ### Dimensionen
-Die Karte soll an einer Wand angebracht werden können, jedoch groß genug sein um eine präzise Auswahl der Radiostationen zu ermöglichen (z.B. soll noch zwischen London & Bristol unterschieden werden können).
+Die Karte soll an einer Wand angebracht werden können, jedoch groß genug sein um eine präzise Auswahl der Radiostationen zu ermöglichen (z.B. soll noch zwischen London & Bristol unterschieden werden können). Eine übliche Weltkarte hat einen Seitenverhältnis von 1:2.05458.
 
 ### Große Welt, kleine Karte
 Wenn, wie in größeren Städten oft vorkommt, viele Radiostationen auf kleinem Raum sind, soll dem Nutzer eine Auswahl präsentiert werden. Hierbei wäre denkbar einen Radius in km angeben zu können um zu bestimmen wie groß die Selektion sein soll. Andernfalls wäre eine Auswahl nach "die nähesten X Stationen" denkbar.
