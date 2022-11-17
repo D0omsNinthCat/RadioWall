@@ -1,7 +1,7 @@
 # Radio-Landkarten-Projekt (Title subject to change)
 ## Projektidee:
 
-Pin in Landkarte -> Konvertierung der Koordinaten zu digital -> Auswahl aus nächstgelegenen Internet-Radiostationen
+Pin in Landkarte -> Konvertierung der Koordinaten auf der Landkarte zu digital -> Auswahl aus nächstgelegenen Internet-Radiostationen
 
 ## Details:
 
