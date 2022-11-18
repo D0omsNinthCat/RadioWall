@@ -8,7 +8,13 @@ Pin in Landkarte -> Konvertierung der Koordinaten auf der Landkarte zu digital -
 ### The Sauce
 Als Quelle für den Radiostream kann die  [Radio Garden openApi](https://jonasrmichel.github.io/radio-garden-openapi/) verwendet werden.
 Die Challenge hier wird es sein die imput Koordinaten in so zu formattieren, dass die Api uns Internetradios in der Umgebung vorschlägt.
-Eine Liste aller Orte mit registrierten Radiostationen und derer Lat/Long Werte bietet die Api unter /ara/content/places bzw. [http://radio.garden/api/ara/content/places]{http://radio.garden/api/ara/content/places}. Das bestmögliche Ergebnis ist also, dass man den den dem Pin am nähesten liegenden Ort findet. Wenn man also den Marker auf Wien setzt können nur alle Wiener Radiostationen auf einmal zurückkommen. Der Parameter "LocalPopularStations" kann dann noch die Radiostationen an einem gewählten Ort nach Popularität sortieren.
+Eine Liste aller Orte mit registrierten Radiostationen und derer Lat/Long Werte bietet die Api unter: /ara/content/places bzw. [http://radio.garden/api/ara/content/places](http://radio.garden/api/ara/content/places). 
+
+Das bestmögliche Ergebnis ist also, dass man den den dem Pin am nähesten liegenden Ort findet. Wenn man also den Marker auf Wien setzt können nur alle Wiener Radiostationen auf einmal zurückkommen. Der Parameter "LocalPopularStations" kann dann noch die Radiostationen an einem gewählten Ort nach Popularität sortieren.
+Sobald ein Radio gewählt ist, kann mit der ID der Station ein mp3 Stream aufgerufen werden. Das Schema dafür sieht so aus:
+``` 
+        radio.garden/api/ara/content/listen/{StationID}/channel.mp3 
+```
 
 ### Dimensionen
 Die Karte soll an einer Wand angebracht werden können, jedoch groß genug sein um eine präzise Auswahl der Radiostationen zu ermöglichen (z.B. soll noch zwischen London & Bristol unterschieden werden können). Eine übliche Weltkarte hat einen Seitenverhältnis von 1:2.05458.
