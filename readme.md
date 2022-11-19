@@ -24,17 +24,18 @@ Wenn, wie in größeren Städten oft vorkommt, viele Radiostationen auf kleinem 
 
 ### X/Y vs Lat/Long
 Geodaten von Orten sind in Radiogarden mit Lat/Long Tupeln angegeben. Nachdem die Karte an der Wand, also einer 2D Ebene, hängen soll und kein Globus wird, wird der User-Input in einer Form von X/Y Koordinaten erfolgen. Ein Ziel wäre es, eine Übersetzung von X/Y Koordinaten, ausgelesen aus einer 2D Weltkarte auf Lat/Long Werte zu schaffen.
-Einen simplen Lösungsansatz wäre die Verwendung einer Plattkarte:
+Einen simplen Lösungsansatz wäre die Verwendung einer Plattkarte. Die Übersetzung von X/Y zu Lat/Long wäre linear.
 ![Plattkarte](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reliefschummerung.de%2Fimages%2Fgloben%2Fri_globus_plattkarte_stumm.jpg&f=1&nofb=1&ipt=8e6ff5d7944c44ac181f6eb2d231351f66710dd513488a425ab9aa7339aae667&ipo=images "Plattkarte")
 
 ### Die Hardware
 Als Grundlage für das System kann vorerst ein Raspberry Pi verwendet werden (keine Ahnung welches Modell wir haben aber solange es Wifi hat und einen Aux/BT Output hat und Python darauf läuft sind wir glücklich) welcher im Endprodukt hinter der Karte oder in einem Rahmen verdeckt werden könnte.
-Bisherige Recherche hat folgende 2 Ansätze als Favoriten:
+Bisherige Recherche hat folgende 3 Ansätze als Favoriten:
 
 1. 2 String potentiometer & Mathe (Corni mach mal eine Skizze).
 2. 1 LED Pin und 1 Kamera
+3. Capacitive/IR Touch Panel
 
-Zum Prototyping der Software wird zuerst die LED Lösung umgesetzt. Langfristig ist aber ein kompakteres All-in-one Produkt vorgesehen, welches Raumunabhängig an jeder Wand funktioniert.
+Als ersten Ansatz wäre das Auslesen von Koordinaten über ein Touch Panel am einfachsten. Langfristig ist aber ein kompakteres All-in-one Produkt vorgesehen, welches Raumunabhängig an jeder Wand funktioniert.
 
 ### Potentiometer Ansatz
 Vorteile:
@@ -59,5 +60,6 @@ Nachteile:
 - anfällig auf externe Faktoren (Lichtverhältnisse, Hinderniss vor Kamera)
 - braucht eine Kamera gegenüber der Karte
 - womöglich weniger präzise
+- komplexes Auslesen von Koordinaten (OpenCV Objekterkennung)
 - hacky
 - nicht schön
