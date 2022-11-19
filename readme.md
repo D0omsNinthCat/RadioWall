@@ -22,6 +22,11 @@ Die Karte soll an einer Wand angebracht werden können, jedoch groß genug sein 
 ### Große Welt, kleine Karte
 Wenn, wie in größeren Städten oft vorkommt, viele Radiostationen auf kleinem Raum sind, soll dem Nutzer eine Auswahl präsentiert werden. Hierbei wäre denkbar einen Radius in km angeben zu können um zu bestimmen wie groß die Selektion sein soll. Andernfalls wäre eine Auswahl nach "die nähesten X Stationen" denkbar.
 
+### X/Y vs Lat/Long
+Geodaten von Orten sind in Radiogarden mit Lat/Long Tupeln angegeben. Nachdem die Karte an der Wand, also einer 2D Ebene, hängen soll und kein Globus wird, wird der User-Input in einer Form von X/Y Koordinaten erfolgen. Ein Ziel wäre es, eine Übersetzung von X/Y Koordinaten, ausgelesen aus einer 2D Weltkarte auf Lat/Long Werte zu schaffen.
+Einen simplen Lösungsansatz wäre die Verwendung einer Plattkarte:
+![Plattkarte](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reliefschummerung.de%2Fimages%2Fgloben%2Fri_globus_plattkarte_stumm.jpg&f=1&nofb=1&ipt=8e6ff5d7944c44ac181f6eb2d231351f66710dd513488a425ab9aa7339aae667&ipo=images "Plattkarte")
+
 ### Die Hardware
 Als Grundlage für das System kann vorerst ein Raspberry Pi verwendet werden (keine Ahnung welches Modell wir haben aber solange es Wifi hat und einen Aux/BT Output hat und Python darauf läuft sind wir glücklich) welcher im Endprodukt hinter der Karte oder in einem Rahmen verdeckt werden könnte.
 Bisherige Recherche hat folgende 2 Ansätze als Favoriten:
