@@ -25,6 +25,7 @@ Wenn, wie in größeren Städten oft vorkommt, viele Radiostationen auf kleinem 
 ### X/Y vs Lat/Long
 Geodaten von Orten sind in Radiogarden mit Lat/Long Tupeln angegeben. Nachdem die Karte an der Wand, also einer 2D Ebene, hängen soll und kein Globus wird, wird der User-Input in einer Form von X/Y Koordinaten erfolgen. Ein Ziel wäre es, eine Übersetzung von X/Y Koordinaten, ausgelesen aus einer 2D Weltkarte auf Lat/Long Werte zu schaffen.
 Einen simplen Lösungsansatz wäre die Verwendung einer Plattkarte. Die Übersetzung von X/Y zu Lat/Long wäre linear.
+[Wikipedia Eintrag](https://en.wikipedia.org/wiki/Equirectangular_projection)
 ![Plattkarte](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.reliefschummerung.de%2Fimages%2Fgloben%2Fri_globus_plattkarte_stumm.jpg&f=1&nofb=1&ipt=8e6ff5d7944c44ac181f6eb2d231351f66710dd513488a425ab9aa7339aae667&ipo=images "Plattkarte")
 
 ### Die Hardware
